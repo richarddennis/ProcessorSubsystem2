@@ -20,10 +20,14 @@ class Disk extends Sim_entity {
 
     Disk(String name, double mean, double var) {
         super(name);
+        
         in = new Sim_port("In");
         add_port(in);
+        
         delay = new Sim_normal_obj("Delay", mean, var);
         add_generator(delay);
+        
+        //Adding to the stats file
         stat = new Sim_stat();
         stat.add_measure(Sim_stat.UTILISATION);
         set_stat(stat);

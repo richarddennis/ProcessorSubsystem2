@@ -14,11 +14,12 @@ import eduni.simjava.distributions.*;
 
 class Sink extends Sim_entity {
 
-    private Sim_port in, out1, out2;
-    private Sim_normal_obj delay;
-    private Sim_random_obj prob;
+    private final Sim_port in, out1, out2;
+    private final Sim_normal_obj delay;
+    private final Sim_random_obj prob;
 
-    private Sim_stat stat; //New for this version
+    //Enabling logging of stats
+    private final Sim_stat stat; //New for this version
 
     //Called once
     Sink(String name, double mean, double var) {
@@ -39,7 +40,7 @@ class Sink extends Sim_entity {
         add_generator(delay);
         add_generator(prob);
 
-//         statistical support
+//      statistical support
         stat = new Sim_stat();
         
 /*      All measurements will be automatically calculated at the end of the 
