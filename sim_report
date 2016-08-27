@@ -7,8 +7,8 @@
 Version: SimJava 2.0
 
 Simulation date:         27 August 2016
-Simulation start time:   00:24:33 BST
-Simulation end time:     00:24:33 BST
+Simulation start time:   01:11:50 BST
+Simulation end time:     01:11:50 BST
 
 ############################################################
 #            Overall simulation run information            #
@@ -51,8 +51,7 @@ Exceedence proportions:
       0.0 < Thread use <= 1.0 : 0.14657949457350217
       1.0 < Thread use <= 2.0 : 0.6664737934079783
       2.0 < Thread use <= 3.0 : 0.18694671201851948
-      3.0 < Thread use <= 4.0 : 0.0
-      4.0 < Thread use : 0.0
+      3.0 < Thread use : 0.0
 
 -------------------------- Disk1 ---------------------------
 
